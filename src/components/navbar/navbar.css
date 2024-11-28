@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+
+}
+
+.main-block{
+    position: relative;
+}
+.navbar{
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    position:sticky;
+
+}
+.heading{
+    font-size: 30px;
+}
+.Navicon{
+    width:80px;
+}
