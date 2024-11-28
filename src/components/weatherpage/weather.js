@@ -6,25 +6,25 @@ const Weather = () => {
   const [city, setCity] = useState("");
 
   const allIcons = {
-    "01d": "https://openweathermap.org/img/wn/01d@2x.png",
+    "01d": "https://img.icons8.com/?size=100&id=8EUmYhfLPTCF&format=png&color=000000",
     "01n": "https://openweathermap.org/img/wn/01n@2x.png",
-    "02d": "https://openweathermap.org/img/wn/02d@2x.png",
-    "02n": "https://openweathermap.org/img/wn/02n@2x.png",
-    "03d": "https://openweathermap.org/img/wn/03d@2x.png",
-    "03n": "https://openweathermap.org/img/wn/03n@2x.png",
+    "02d": "https://img.icons8.com/?size=100&id=zIVmoh4T8wh7&format=png&color=000000",
+    "02n": "https://img.icons8.com/?size=100&id=VT8HlhlnhUwL&format=png&color=000000",
+    "03d": "https://img.icons8.com/?size=100&id=aXgIQg8m0A4o&format=png&color=000000",
+    "03n": "https://img.icons8.com/?size=100&id=aXgIQg8m0A4o&format=png&color=000000",
     "04d": "https://openweathermap.org/img/wn/04d@2x.png",
     "04n": "https://openweathermap.org/img/wn/04n@2x.png",
-    "09d": "https://openweathermap.org/img/wn/09d@2x.png",
-    "09n": "https://openweathermap.org/img/wn/09n@2x.png",
-    "10d": "https://openweathermap.org/img/wn/10d@2x.png",
-    "10n": "https://openweathermap.org/img/wn/10n@2x.png",
-    "11d": "https://openweathermap.org/img/wn/11d@2x.png",
-    "11n": "https://openweathermap.org/img/wn/11n@2x.png",
-    "13d": "https://openweathermap.org/img/wn/13d@2x.png",
-    "13n": "https://openweathermap.org/img/wn/13n@2x.png",
+    "09d": "https://img.icons8.com/?size=100&id=kKxyuLXD4w0n&format=png&color=000000",
+    "09n": "https://img.icons8.com/?size=100&id=kKxyuLXD4w0n&format=png&color=000000",
+    "10d": "https://img.icons8.com/?size=100&id=MVj2tmasj0Pp&format=png&color=000000",
+    "10n": "https://img.icons8.com/?size=100&id=MVj2tmasj0Pp&format=png&color=000000",
+    "11d": "https://img.icons8.com/?size=100&id=c0Otgmp74zQX&format=png&color=000000",
+    "11n": "https://img.icons8.com/?size=100&id=c0Otgmp74zQX&format=png&color=000000",
+    "13d": "https://img.icons8.com/?size=100&id=Mvbzy3ZDRcVj&format=png&color=000000",
+    "13n": "https://img.icons8.com/?size=100&id=Mvbzy3ZDRcVj&format=png&color=000000",
   };
 
-  const defaultIconUrl = "https://openweathermap.org/img/wn/01d@2x.png";
+  const defaultIconUrl = "https://img.icons8.com/?size=100&id=8EUmYhfLPTCF&format=png&color=000000";
 
   const search = async (city) => {
     if (city === "") {
@@ -62,7 +62,7 @@ const Weather = () => {
   };
 
   useEffect(() => {
-    search("Hyderabad");
+    search("New York");
   }, []);
 
   const Data = [
