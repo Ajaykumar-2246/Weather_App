@@ -1,30 +1,46 @@
 import React, { useEffect, useState } from "react";
 import "./weather.css";
 
+import clearSun1d from '../../assets/clearsun.png';
+import clearnight1d from '../../assets/clearnight.png'
+import fewCloud2d from '../../assets/fewCloud.png';
+import fewCloudNight2n from '../../assets/fewCloudNight.png';
+import  scatteredclouds3d3n  from '../../assets/scatteredclouds.png';
+import brokenCloud4d4n from '../../assets/brokencloud.png';
+import showerRain9d9n from '../../assets/showerRain.png';
+import rainDay10d from '../../assets/rainDay.png';
+import rainyNight10n from '../../assets/rainnight.png';
+import thunderStrom11d11n from '../../assets/thunderStrom.png';
+import snow13d13n from '../../assets/snow.png';
+import mist50d50n from '../../assets/mist.png';
+
+
 const Weather = () => {
   const [weatherData, setWeatherData] = useState(null); // Set initial state to null
   const [city, setCity] = useState("");
 
   const allIcons = {
-    "01d": "https://img.icons8.com/?size=100&id=8EUmYhfLPTCF&format=png&color=000000",
-    "01n": "https://openweathermap.org/img/wn/01n@2x.png",
-    "02d": "https://img.icons8.com/?size=100&id=zIVmoh4T8wh7&format=png&color=000000",
-    "02n": "https://img.icons8.com/?size=100&id=VT8HlhlnhUwL&format=png&color=000000",
-    "03d": "https://img.icons8.com/?size=100&id=aXgIQg8m0A4o&format=png&color=000000",
-    "03n": "https://img.icons8.com/?size=100&id=aXgIQg8m0A4o&format=png&color=000000",
-    "04d": "https://openweathermap.org/img/wn/04d@2x.png",
-    "04n": "https://openweathermap.org/img/wn/04n@2x.png",
-    "09d": "https://img.icons8.com/?size=100&id=kKxyuLXD4w0n&format=png&color=000000",
-    "09n": "https://img.icons8.com/?size=100&id=kKxyuLXD4w0n&format=png&color=000000",
-    "10d": "https://img.icons8.com/?size=100&id=MVj2tmasj0Pp&format=png&color=000000",
-    "10n": "https://img.icons8.com/?size=100&id=MVj2tmasj0Pp&format=png&color=000000",
-    "11d": "https://img.icons8.com/?size=100&id=c0Otgmp74zQX&format=png&color=000000",
-    "11n": "https://img.icons8.com/?size=100&id=c0Otgmp74zQX&format=png&color=000000",
-    "13d": "https://img.icons8.com/?size=100&id=Mvbzy3ZDRcVj&format=png&color=000000",
-    "13n": "https://img.icons8.com/?size=100&id=Mvbzy3ZDRcVj&format=png&color=000000",
+    "01d": clearSun1d,
+    "01n": clearnight1d,
+    "02d": fewCloud2d,
+    "02n": fewCloudNight2n,
+    "03d":scatteredclouds3d3n,
+    "03n": scatteredclouds3d3n,
+    "04d": brokenCloud4d4n,
+    "04n":brokenCloud4d4n,
+    "09d":showerRain9d9n,
+    "09n": showerRain9d9n,
+    "10d": rainDay10d,
+    "10n": rainyNight10n,
+    "11d":thunderStrom11d11n,
+    "11n": thunderStrom11d11n,
+    "13d":snow13d13n,
+    "13n": snow13d13n,
+    "50d":mist50d50n,
+    "50n":mist50d50n
   };
 
-  const defaultIconUrl = "https://img.icons8.com/?size=100&id=8EUmYhfLPTCF&format=png&color=000000";
+  const defaultIconUrl =clearSun1d;
 
   const search = async (city) => {
     if (city === "") {
@@ -98,7 +114,7 @@ const Weather = () => {
         <div className="weather w-100 p-3 rounded-4 bg-light shadow-sm">
           <div className="search-bar d-flex gap-2">
             <input
-              type="text"
+              type="search"
               className="form-control w-100 rounded-pill"
               value={city}
               onChange={(e) => setCity(e.target.value)}
