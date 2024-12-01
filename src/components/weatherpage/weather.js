@@ -60,7 +60,6 @@ const Weather = () => {
 
       const data = await response.json();
       const iconUrl = allIcons[data.weather[0].icon] || defaultIconUrl;
-      console.log(data);
       setWeatherData({
         city: data.name,
         temperature: Math.floor(data.main.temp),
